@@ -1,0 +1,258 @@
+/* Additional Cyberpunk Styles for Vercel Next.js Template */
+
+/* Vercel-style components */
+.vercel-card {
+    background: rgba(26, 26, 26, 0.9);
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.vercel-card:hover {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* Vercel Button */
+.vercel-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.vercel-button:hover {
+    background: #111;
+    border-color: #555;
+}
+
+.vercel-button.primary {
+    background: linear-gradient(135deg, #0070f3, #0096ff);
+    border: none;
+    color: white;
+}
+
+.vercel-button.primary:hover {
+    background: linear-gradient(135deg, #0061d5, #0081f1);
+}
+
+/* Next.js specific styles */
+.nextjs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nextjs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+/* Vercel analytics integration */
+.vercel-analytics {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--neon-cyan);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    color: var(--neon-cyan);
+    z-index: 1000;
+}
+
+/* Cyberpunk loading states */
+.cyber-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: var(--neon-cyan);
+    font-family: 'Courier New', monospace;
+}
+
+.cyber-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(0, 255, 255, 0.3);
+    border-top: 3px solid var(--neon-cyan);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Vercel-style alerts */
+.vercel-alert {
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+    font-size: 0.875rem;
+}
+
+.vercel-alert.success {
+    background: rgba(0, 255, 0, 0.1);
+    border: 1px solid #00ff00;
+    color: #00ff00;
+}
+
+.vercel-alert.error {
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid #ff0000;
+    color: #ff0000;
+}
+
+.vercel-alert.warning {
+    background: rgba(255, 165, 0, 0.1);
+    border: 1px solid #ffa500;
+    color: #ffa500;
+}
+
+/* Next.js footer */
+.nextjs-footer {
+    background: rgba(0, 0, 0, 0.9);
+    border-top: 1px solid #333;
+    padding: 2rem 0;
+    text-align: center;
+    color: #666;
+    font-size: 0.875rem;
+}
+
+/* Responsive cyberpunk grid */
+@media (max-width: 768px) {
+    .nextjs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+/* Dark mode toggle */
+.dark-mode-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid var(--neon-cyan);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    box-shadow: var(--glow-cyan);
+}
+
+/* Vercel-style code blocks */
+.code-block {
+    background: #0a0a0a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    overflow-x: auto;
+}
+
+.code-block .line {
+    display: block;
+    padding: 0.125rem 0;
+}
+
+.code-block .comment { color: #6a737d; }
+.code-block .keyword { color: #f97583; }
+.code-block .string { color: #9ecbff; }
+.code-block .number { color: #79b8ff; }
+
+/* Cyberpunk progress bars */
+.cyber-progress {
+    width: 100%;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cyber-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--neon-cyan), var(--neon-pink));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.cyber-progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Vercel deployment button */
+.deploy-to-vercel {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #000;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.deploy-to-vercel:hover {
+    border-color: #fff;
+    background: #111;
+}
+
+.deploy-to-vercel svg {
+    width: 16px;
+    height: 16px;
+}

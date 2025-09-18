@@ -1,0 +1,17 @@
+{
+  "name": "slavko-cyberpunk",
+  "version": "2.0.0",
+  "description": "Cyberpunk-themed AI code analysis platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 3000",
+    "build": "echo 'Build complete - ready for Vercel'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["cyberpunk", "neon", "ai", "code-analysis", "vercel"],
+  "author": "Slavko Platform Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
